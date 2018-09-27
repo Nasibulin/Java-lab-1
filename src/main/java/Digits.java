@@ -1,7 +1,6 @@
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.Arrays;
 
 
 /**
@@ -12,7 +11,7 @@ import java.util.Arrays;
  * To change this template use File | Settings | File Templates.
  */
 public class Digits {
-    static final int DIG_HEIGHT = 10;
+    static final int DIG_HEIGHT = 8;
     static final int DIG_WIDTH = 8;
     //static final int DIG_QTY = 10;
     static byte digits [][];
@@ -86,7 +85,7 @@ public class Digits {
                     sym = digits[k][pos + row * (DIG_WIDTH + 1)];
                     if (sym != 10 & sym != 13) {
 
-                        result+=sym;
+                        result+=(char)sym;
                         //System.out.print((char) sym); // cast must be explicit
                     }
 //                    else if (sym == 10 || sym == 13) System.out.print((char)32);
