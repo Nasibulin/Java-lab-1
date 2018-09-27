@@ -47,7 +47,7 @@ class Program {
         double result = Sqrt.calc();
         System.out.println("Sqrt of " + value + "=" + result);
     }
-    public double sqrt(double value, double accuracy){
+    public static double sqrt(double value, double accuracy){
         Sqrt sqrt = new Sqrt(value,accuracy);
         double result = Sqrt.calc();
         return result;
