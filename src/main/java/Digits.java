@@ -93,7 +93,7 @@ public class Digits {
 
                 }
             }
-            result+="\n";
+            result+="\r\n";
             //System.out.println();
         }
     return result;
