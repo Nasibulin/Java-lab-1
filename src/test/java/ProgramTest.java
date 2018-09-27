@@ -1,5 +1,5 @@
 import org.junit.Test;
-
+import static org.junit.Assert.*;
 /**
  * Created with IntelliJ IDEA.
  * User: Nasibulin
@@ -10,6 +10,6 @@ import org.junit.Test;
 public class ProgramTest {
     @Test
     public void testSqrt() throws Exception {
-
+    assertEquals(100.0,Program.sqrt(10000.0,0.0000001),0.0000001);
     }
 }

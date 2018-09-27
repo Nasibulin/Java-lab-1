@@ -1,4 +1,6 @@
 import org.junit.Test;
+import static org.junit.Assert.*;
+
 
 /**
  * Created with IntelliJ IDEA.
@@ -10,6 +12,7 @@ import org.junit.Test;
 public class CollatzTest {
     @Test
     public void testMaxCollatz() throws Exception {
-
+    assertEquals(837799,Collatz.MaxCollatz(1000000));
     }
+
 }
