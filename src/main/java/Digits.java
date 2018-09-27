@@ -26,6 +26,7 @@ public class Digits {
         //System.out.println(Arrays.deepToString(digits));
         byte sym;
         FileToArray();
+        System.out.println(main("27092018"));
         for (int row = 0; row < DIG_HEIGHT; row++) {
             //for (int column=0; column < byteArray.length; column++) {
             for (int column = 0; column < s.length(); column++) {
@@ -85,7 +86,7 @@ public class Digits {
                     sym = digits[k][pos + row * (DIG_WIDTH + 1)];
                     if (sym != 10 & sym != 13) {
 
-                        result+=(char)sym;
+                        result+=sym;
                         //System.out.print((char) sym); // cast must be explicit
                     }
 //                    else if (sym == 10 || sym == 13) System.out.print((char)32);

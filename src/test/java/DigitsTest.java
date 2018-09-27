@@ -1,4 +1,5 @@
 import org.junit.Test;
+import static org.junit.Assert.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -10,6 +11,6 @@ import org.junit.Test;
 public class DigitsTest {
     @Test
     public void testMain() throws Exception {
-
+    assertEquals("  ***   *****   ***    ***    ***    ***     *     ***  "+"\n"+" *   *  *   *  *   *  *   *  *   *  *   *   **    *   * "+"\n"+"     *      *  *  **  *   *      *  *  **    *    *   * "+"\n"+"    *       *  * * *  *   *     *   * * *    *     ***  "+"\n"+"   *       *   **  *   ****    *    **  *    *    *   * "+"\n"+"  *        *   *   *      *   *     *   *    *    *   * "+"\n"+" *        *    *   *     *   *      *   *    *    *   * "+"\n"+" *****    *     ***    **    *****   ***     *     ***  "+"\n",Digits.main("27092018"));
     }
 }
