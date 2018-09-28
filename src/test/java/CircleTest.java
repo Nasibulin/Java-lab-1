@@ -13,4 +13,12 @@ public class CircleTest {
     public void testDelta() throws Exception {
     assertEquals(0.15915494319051504,Circle.delta(1.0),0.00000000000000001);
     }
+    @Test
+    public void testperimeterTotal() throws Exception {
+    assertEquals(50265.48245743669,Circle.perimeterTotal(3.0,1.0),0.00000000000000001);
+    }
+    @Test
+    public void testroadTotal() throws Exception {
+    assertEquals(21991.14857512855,Circle.roadTotal(3.0,1.0),0.00000000000000001);
+    }
 }

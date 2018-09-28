@@ -46,20 +46,10 @@ public class Circle {
 
     public static void main(String[] args) {
 
-        System.out.println(delta(1.0));
+        System.out.println(perimeterTotal(3.0,1.0));
+        System.out.println(roadTotal(3.0,1.0));
 
-        Circle pool = new Circle();
-        double poolRadius=3;
-        double roadRadius=1;
-        System.out.println();
-        pool.setRadius(poolRadius+roadRadius);
-        double perimeterTotal=pool.getReference()*PERIMETER_COST;
-        double tmp_roadTotal=pool.getArea();
-        pool.setRadius(poolRadius);
-        double roadTotal=tmp_roadTotal-pool.getArea();
-        roadTotal*=ROAD_COST;
-        System.out.println("perimeterTotal="+perimeterTotal);
-        System.out.println("roadTotal="+roadTotal);
+;
     }
     public static double delta(double reference_inc){
         Circle earth = new Circle();
@@ -68,6 +58,24 @@ public class Circle {
         earth.setReference(earth.getReference() + reference_inc);
         double delta=earth.getRadius()-tmpRadius;
         return delta;
+
+    }
+    public static double perimeterTotal (double poolRadius,double roadRadius){
+        Circle pool = new Circle();
+        pool.setRadius(poolRadius+roadRadius);
+        double perimeterTotal=pool.getReference()*PERIMETER_COST;
+        pool.setRadius(poolRadius);
+        return perimeterTotal;
+
+    }
+    public static double roadTotal (double poolRadius,double roadRadius){
+        Circle pool = new Circle();
+        pool.setRadius(poolRadius+roadRadius);
+        double tmp_roadTotal=pool.getArea();
+        pool.setRadius(poolRadius);
+        double roadTotal=tmp_roadTotal-pool.getArea();
+        roadTotal*=ROAD_COST;
+        return roadTotal;
 
     }
 
