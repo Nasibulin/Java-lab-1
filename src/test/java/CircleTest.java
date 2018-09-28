@@ -1,4 +1,5 @@
 import org.junit.Test;
+import static org.junit.Assert.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -10,6 +11,6 @@ import org.junit.Test;
 public class CircleTest {
     @Test
     public void testDelta() throws Exception {
-
+    assertEquals(0.15915494319051504,Circle.delta(1.0),0.00000000000000001);
     }
 }
