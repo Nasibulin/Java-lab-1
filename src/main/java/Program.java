@@ -39,6 +39,7 @@ class Sqrt {
 }
 
 class Program {
+
     public static void main(String[] args) {
 
         double value = Double.parseDouble(args[0]);
